@@ -6,10 +6,11 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroComponent } from './features/components/hero/hero.component';
+import { HomeComponent } from './features/home/home.component';
+import { HeroComponent } from './features/home/hero/hero.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroComponent],
+  declarations: [AppComponent, HomeComponent, HeroComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
