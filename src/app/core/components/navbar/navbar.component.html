@@ -4,17 +4,18 @@
       <img src="images/logo/logo-light.webp" alt="logo" />
     </div>
     <ul class="navbar__nav d-flex align-items-center flex-row">
-      <li
-        class="navbar__item"
-        *ngFor="let item of navbarMenus"
-        [ngClass]="
-          item.submenus ? 'navbar__item d-flex align-items-center gap-0' : ''
-        "
-      >
-        <a class="navbar__link" [ngClass]="item.submenus ? 'pe-0' : ''">{{
-          item.title
-        }}</a>
-        <ng-icon name="featherChevronDown" *ngIf="item.submenus"></ng-icon>
+      <li class="navbar__item" *ngFor="let item of navbarMenus">
+        <a
+          class="navbar__link"
+          [ngClass]="
+            item.submenus
+              ? 'navbar__item d-flex align-items-center gap-0 pe-0'
+              : ''
+          "
+          >{{ item.title }}
+          <ng-icon name="featherChevronDown" *ngIf="item.submenus"></ng-icon>
+        </a>
+
         <ul class="submenu" *ngIf="item.submenus">
           <li class="submenu__item" *ngFor="let item of item.submenus">
             <a class="submenu__link">{{ item.title }}</a>

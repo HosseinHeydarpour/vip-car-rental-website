@@ -58,7 +58,7 @@
     &:hover > .submenu {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateY(10px);
     }
   }
 
@@ -75,7 +75,7 @@
     padding-left: 9px;
     transition: all 0.3s;
     &:hover {
-      color: var(--color-yellow);
+      color: var(--color-yellow) !important;
     }
   }
 
@@ -157,5 +157,8 @@
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
+    &:hover {
+      color: var(--color-yellow) !important;
+    }
   }
 }
