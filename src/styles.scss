@@ -7,6 +7,7 @@
 :root {
   --text-color: #999;
   --bg-color: #1b1b1b;
+  --color-yellow: #f5b754;
 }
 
 *,
@@ -24,4 +25,5 @@ body {
   color: var(--text-color);
   overflow-x: hidden !important;
   background: var(--bg-color);
+  position: relative;
 }
