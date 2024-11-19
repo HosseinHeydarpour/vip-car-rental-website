@@ -1,0 +1,21 @@
+.hero {
+  &__image-wrapper {
+    height: 100dvh;
+    position: relative;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+    }
+  }
+}
