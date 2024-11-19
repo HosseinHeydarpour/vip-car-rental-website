@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+// font
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Variables
+:root {
+  --text-color: #999;
+  --bg-color: #1b1b1b;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.95em;
+  color: var(--text-color);
+  overflow-x: hidden !important;
+  background: var(--bg-color);
+}
