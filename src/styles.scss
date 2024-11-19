@@ -44,36 +44,6 @@ a:visited {
   }
 }
 
-// Owl carousel general styles
-
-.owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  background: transparent;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 15px;
-  height: 15px;
-  margin: 0 3px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid #fff;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
-}
-
-.owl-theme .owl-dots {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-}
-
 // .owl-theme .owl-nav.disabled + .owl-dots {
 //   margin-top: 10px;
 //   line-height: 0.7;
