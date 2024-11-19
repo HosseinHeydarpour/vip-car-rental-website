@@ -3,6 +3,8 @@ import {
   BrowserModule,
   provideClientHydration,
 } from '@angular/platform-browser';
+import { NgIconsModule } from '@ng-icons/core';
+import { featherPhoneCall, featherChevronDown } from '@ng-icons/feather-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +14,11 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeroComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgIconsModule.withIcons({ featherPhoneCall, featherChevronDown }),
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
