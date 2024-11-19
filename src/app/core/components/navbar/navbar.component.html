@@ -1,13 +1,34 @@
 <nav class="navbar">
   <div class="container">
+    <div class="navbar__logo">
+      <img src="images/logo/logo-light.webp" alt="logo" />
+    </div>
     <ul class="navbar__nav d-flex align-items-center flex-row">
-      <li class="navbar__item" *ngFor="let item of navbarMenus">
-        <a class="navbar__link">{{ item.title }}</a>
+      <li
+        class="navbar__item"
+        *ngFor="let item of navbarMenus"
+        [ngClass]="
+          item.submenus ? 'navbar__item d-flex align-items-center gap-0' : ''
+        "
+      >
+        <a class="navbar__link" [ngClass]="item.submenus ? 'pe-0' : ''">{{
+          item.title
+        }}</a>
+        <ng-icon name="featherChevronDown" *ngIf="item.submenus"></ng-icon>
         <ul class="submenu" *ngIf="item.submenus">
-          <li class="navbar__item" *ngFor="let item of item.submenus">
-            <a class="navbar__link">{{ item.title }}</a>
+          <li class="submenu__item" *ngFor="let item of item.submenus">
+            <a class="submenu__link">{{ item.title }}</a>
           </li>
         </ul>
+      </li>
+      <li class="navbar__cta">
+        <div class="navbar__cta--icon">
+          <ng-icon name="featherPhoneCall"></ng-icon>
+        </div>
+        <div class="navbar__cta--text d-flex flex-column">
+          <span>Need Help?</span>
+          <a href="#">855 100 4444</a>
+        </div>
       </li>
     </ul>
   </div>
