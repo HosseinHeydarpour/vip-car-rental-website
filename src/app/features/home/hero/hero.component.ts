@@ -8,13 +8,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HeroComponent {
   heroSliderOptions: OwlOptions = {
+    nav: false,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     dots: true,
-    navSpeed: 700,
-    navText: ['', ''],
+    margin: 0,
     responsive: {
       0: {
         items: 1,
@@ -29,6 +29,5 @@ export class HeroComponent {
         items: 1,
       },
     },
-    nav: false,
   };
 }

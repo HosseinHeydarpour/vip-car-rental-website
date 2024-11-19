@@ -45,6 +45,7 @@ a:visited {
 }
 
 // Owl carousel general styles
+
 .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
@@ -68,12 +69,13 @@ a:visited {
 
 .owl-theme .owl-dots {
   position: absolute;
-  bottom: 4vh;
+  bottom: 0;
   width: 100%;
+  left: 0;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px;
-  line-height: 0.7;
-  display: block;
-}
+// .owl-theme .owl-nav.disabled + .owl-dots {
+//   margin-top: 10px;
+//   line-height: 0.7;
+//   display: block;
+// }
