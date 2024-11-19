@@ -27,3 +27,17 @@ body {
   background: var(--bg-color);
   position: relative;
 }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+// container reset
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
