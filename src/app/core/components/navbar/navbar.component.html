@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="container">
+    <ul class="navbar__nav d-flex align-items-center flex-row">
+      <li class="navbar__item" *ngFor="let item of navbarMenus">
+        <a class="navbar__link">{{ item.title }}</a>
+        <ul class="submenu" *ngIf="item.submenus">
+          <li class="navbar__item" *ngFor="let item of item.submenus">
+            <a class="navbar__link">{{ item.title }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
