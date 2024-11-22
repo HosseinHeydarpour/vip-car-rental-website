@@ -12,8 +12,6 @@ import { HomeComponent } from './features/home/home.component';
 import { HeroComponent } from './features/home/hero/hero.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeroComponent, NavbarComponent],
@@ -21,8 +19,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    CarouselModule,
-    BrowserAnimationsModule,
     NgIconsModule.withIcons({ featherPhoneCall, featherChevronDown }),
   ],
   providers: [provideClientHydration()],
