@@ -1,8 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // font
 
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
-
 // Variables
 :root {
   --text-color: #999;
@@ -41,9 +39,3 @@ a:visited {
     max-width: 1200px !important;
   }
 }
-
-// .owl-theme .owl-nav.disabled + .owl-dots {
-//   margin-top: 10px;
-//   line-height: 0.7;
-//   display: block;
-// }
