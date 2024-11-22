@@ -29,11 +29,36 @@
 
   &__content {
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 25%;
-    z-index: 5000;
-    transform: translate(0, -50%);
-    position: relative;
+
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     z-index: 50;
+  }
+
+  &__heading {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &__desc {
+    width: 55%;
+    span:first-child {
+      font-size: 17px;
+      font-weight: 300;
+    }
+  }
+
+  &__price {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    span {
+      color: var(--color-yellow) !important;
+      font-size: 21px;
+      font-weight: 700;
+    }
   }
 }
