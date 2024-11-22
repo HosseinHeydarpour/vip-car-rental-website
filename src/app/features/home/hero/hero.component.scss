@@ -1,5 +1,9 @@
 .hero {
-  &__image-wrapper {
+  &__slider {
+    height: 100dvh;
+  }
+
+  &__slide {
     height: 100dvh;
     position: relative;
     width: 100dvw;
