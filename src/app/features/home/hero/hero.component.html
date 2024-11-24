@@ -33,8 +33,6 @@
             </div>
             <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
               <app-info-box
-                [key]="'Doors'"
-                value="'2'"
                 class="d-flex justify-content-center"
               ></app-info-box>
             </div>
@@ -45,10 +43,83 @@
   </swiper-slide>
   <swiper-slide>
     <div class="hero__slide">
-      <img src="images/slider/2.webp" alt="" /></div
-  ></swiper-slide>
+      <img src="images/slider/2.webp" alt="" />
+    </div>
+    <div class="hero__content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 d-flex justify-content-center flex-column">
+            <div class="d-flex flex-column">
+              <span class="subtitle">* Economy</span>
+              <h1 class="hero__heading">Bentley Bentayga</h1>
+            </div>
+            <div class="hero__desc d-flex text-white justify-content-between">
+              <span>Reserve now and get the best offer</span>
+              <p class="hero__price">
+                <span>600$</span>
+                / day
+              </p>
+            </div>
+            <div class="hero__button d-flex gap-2">
+              <app-primary-btn
+                [buttonText]="'Rent Now'"
+                [buttonLink]="'#'"
+                [hasArrow]="true"
+              ></app-primary-btn>
+
+              <app-secondary-btn
+                [buttonText]="'View Details'"
+                [buttonLink]="'#'"
+                [hasArrow]="true"
+              ></app-secondary-btn>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
+            <app-info-box class="d-flex justify-content-center"></app-info-box>
+          </div>
+        </div>
+      </div>
+    </div>
+  </swiper-slide>
   <swiper-slide>
     <div class="hero__slide">
-      <img src="images/slider/3.webp" alt="" /></div
+      <img src="images/slider/3.webp" alt="" />
+      <div class="hero__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 d-flex justify-content-center flex-column">
+              <div class="d-flex flex-column">
+                <span class="subtitle">* Economy</span>
+                <h1 class="hero__heading">Rolls Royce Cullinan</h1>
+              </div>
+              <div class="hero__desc d-flex text-white justify-content-between">
+                <span>Reserve now and get the best offer</span>
+                <p class="hero__price">
+                  <span>900$</span>
+                  / day
+                </p>
+              </div>
+              <div class="hero__button d-flex gap-2">
+                <app-primary-btn
+                  [buttonText]="'Rent Now'"
+                  [buttonLink]="'#'"
+                  [hasArrow]="true"
+                ></app-primary-btn>
+
+                <app-secondary-btn
+                  [buttonText]="'View Details'"
+                  [buttonLink]="'#'"
+                  [hasArrow]="true"
+                ></app-secondary-btn>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
+              <app-info-box
+                class="d-flex justify-content-center"
+              ></app-info-box>
+            </div>
+          </div>
+        </div>
+      </div></div
   ></swiper-slide>
 </swiper-container>
