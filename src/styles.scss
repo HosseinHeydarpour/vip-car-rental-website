@@ -50,3 +50,21 @@ a:visited {
   font-weight: 300;
   opacity: 0.9;
 }
+
+.section-heading {
+  font-size: 35px;
+  font-family: "Outfit", sans-serif;
+  color: #fff;
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 1.25em;
+  font-weight: 700;
+}
+
+.section-heading span {
+  color: #f5b754;
+}
+
+.section-padding {
+  padding: 120px 0;
+}
