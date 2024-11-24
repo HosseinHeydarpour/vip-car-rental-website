@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { InfoBoxComponent } from './hero/info-box/info-box.component';
+import { InfoBoxComponent } from './home/hero/info-box/info-box.component';
 import { HeroComponent } from './home/hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
