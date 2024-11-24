@@ -7,8 +7,10 @@ import {
   bootstrapPersonFill,
   bootstrapLuggageFill,
   bootstrapCarFrontFill,
+  bootstrapArrowUpRight,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
+import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -19,8 +21,10 @@ import { CommonModule } from '@angular/common';
       bootstrapPersonFill,
       bootstrapLuggageFill,
       bootstrapCarFrontFill,
+      bootstrapArrowUpRight,
     }),
   ],
-  exports: [CommonModule, NgIconsModule],
+  exports: [CommonModule, NgIconsModule, PrimaryBtnComponent],
+  declarations: [PrimaryBtnComponent, PrimaryBtnComponent],
 })
 export class SharedModule {}
