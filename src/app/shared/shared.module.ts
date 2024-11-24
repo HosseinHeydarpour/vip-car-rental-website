@@ -11,6 +11,8 @@ import {
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
+import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,7 +26,16 @@ import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
       bootstrapArrowUpRight,
     }),
   ],
-  exports: [CommonModule, NgIconsModule, PrimaryBtnComponent],
-  declarations: [PrimaryBtnComponent, PrimaryBtnComponent],
+  declarations: [
+    PrimaryBtnComponent,
+    SecondaryBtnComponent,
+    SecondaryBtnComponent,
+  ],
+  exports: [
+    CommonModule,
+    NgIconsModule,
+    PrimaryBtnComponent,
+    SecondaryBtnComponent,
+  ],
 })
 export class SharedModule {}

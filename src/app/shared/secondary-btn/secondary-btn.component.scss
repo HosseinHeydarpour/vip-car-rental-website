@@ -1,0 +1,26 @@
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  height: auto;
+  padding: 14px 42px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  transition: border-color 300ms ease, transform 300ms ease,
+    background-color 300ms ease, color 300ms ease;
+  transform-style: preserve-3d;
+}
+
+a:hover,
+a:active {
+  border: 1px solid var(--color-yellow);
+  background-color: var(--color-yellow);
+  color: #1b1b1b;
+  transform: translate3d(0px, -6px, 0.01px);
+}
