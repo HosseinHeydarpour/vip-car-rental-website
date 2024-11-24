@@ -12,6 +12,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
 import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
     PrimaryBtnComponent,
     SecondaryBtnComponent,
     SecondaryBtnComponent,
+    CardComponent,
   ],
   exports: [
     CommonModule,
