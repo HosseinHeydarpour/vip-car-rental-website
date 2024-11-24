@@ -21,6 +21,7 @@
     "@angular/platform-server": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@angular/ssr": "^18.0.4",
+    "@ng-icons/bootstrap-icons": "^29.10.0",
     "@ng-icons/core": "^29.10.0",
     "@ng-icons/feather-icons": "^29.9.0",
     "@ng-icons/game-icons": "^29.10.0",
