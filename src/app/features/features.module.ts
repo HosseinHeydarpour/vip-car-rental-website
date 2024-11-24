@@ -4,9 +4,10 @@ import { HeroComponent } from './home/hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
+import { AboutUsComponent } from './home/about-us/about-us.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeroComponent, InfoBoxComponent],
+  declarations: [HomeComponent, HeroComponent, InfoBoxComponent, AboutUsComponent],
   imports: [SharedModule, CoreModule],
   exports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
