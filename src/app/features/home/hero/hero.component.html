@@ -5,7 +5,7 @@
       <div class="hero__content">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 d-flex justify-content-center flex-column">
               <div class="d-flex flex-column">
                 <span class="subtitle">* Economy</span>
                 <h1 class="hero__heading">Rolls Royce Cullinan</h1>
@@ -17,9 +17,21 @@
                   / day
                 </p>
               </div>
+              <div class="hero__button">
+                <app-primary-btn
+                  [buttonText]="'View Details'"
+                  [buttonLink]="'#'"
+                  [hasArrow]="true"
+                ></app-primary-btn>
+                <a href="" class="secondary-btn">Rent Now</a>
+              </div>
             </div>
-            <div class="col-lg-5">
-              <app-info-box [key]="'Doors'" value="'2'"></app-info-box>
+            <div class="col-lg-4 offset-lg-1">
+              <app-info-box
+                [key]="'Doors'"
+                value="'2'"
+                class="d-flex justify-content-center"
+              ></app-info-box>
             </div>
           </div>
         </div>
