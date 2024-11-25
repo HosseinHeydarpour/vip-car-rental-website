@@ -1,10 +1,16 @@
 <div class="card-cmp">
   <img [src]="imageURL" alt="" *ngIf="imageURL" />
-  <div class="fade" *ngIf="hasFade"></div>
+  <div class="card-cmp__fade" *ngIf="hasFade"></div>
+  <div class="card-cmp__title" *ngIf="title">
+    <h4>
+      {{ title }}
+    </h4>
+  </div>
   <div class="card-cmp__curv-button">
     <a href="">
       <i>
-        <ng-icon name="bootstrapPlay"></ng-icon>
+        <ng-icon [name]="iconName" *ngIf="iconName"></ng-icon>
+        <span *ngIf="counter">{{ counter }}</span>
       </i>
     </a>
     <div class="card-cmp__svg-top">
