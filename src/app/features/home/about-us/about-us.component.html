@@ -1,36 +1,48 @@
 <section class="section-about-us section-padding">
   <div class="container">
-    <div class="row col-lg-7">
-      <div class="section-about-us__content">
-        <span class="subtitle">* VIP</span>
-        <h3 class="section-heading">
-          We Are More Than <span class="d-lg-block">A Car Rental Company</span>
-        </h3>
-        <div>
-          <p>
-            Car repair quisque sodales dui ut varius vestibulum drana tortor
-            turpis porttiton tellus eu euismod nisl massa nutodio in the miss
-            volume place urna lacinia eros nunta urna mauris vehicula rutrum in
-            the miss on volume interdum.
-          </p>
-          <ul>
-            <li>
-              <span>Sports and Luxury Cars</span>
-            </li>
-            <li>
-              <span>Economy Cars</span>
-            </li>
-          </ul>
+    <div class="row align-items-center gx-2">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div
+          class="section-about-us__content d-flex flex-column align-items-start"
+        >
+          <span class="subtitle mb-xl-3 mb-2">VIP Car rental</span>
+          <h3 class="section-heading">
+            We Are More Than
+            <span class="d-lg-block">A Car Rental Company</span>
+          </h3>
+          <div>
+            <p class="mb-4">
+              Car repair quisque sodales dui ut varius vestibulum drana tortor
+              turpis porttiton tellus eu euismod nisl massa nutodio in the miss
+              volume place urna lacinia eros nunta urna mauris vehicula rutrum
+              in the miss on volume interdum.
+            </p>
+            <ul class="d-flex flex-column gap-2 mt-1">
+              <li>
+                <i>
+                  <ng-icon name="bootstrapCheck2"></ng-icon>
+                </i>
+                <span>Sports and Luxury Cars</span>
+              </li>
+              <li>
+                <i>
+                  <ng-icon name="bootstrapCheck2"></ng-icon>
+                </i>
+                <span>Economy Cars</span>
+              </li>
+            </ul>
+          </div>
+          <app-primary-btn
+            [buttonText]="'Read More'"
+            [buttonLink]="'#'"
+            [hasArrow]="true"
+            class="mt-3"
+          ></app-primary-btn>
         </div>
-        <app-primary-btn
-          [buttonText]="'Read More'"
-          [buttonLink]="'#'"
-          [hasArrow]="true"
-        ></app-primary-btn>
       </div>
-    </div>
-    <div class="col-lg-5">
-      <div></div>
+      <div class="col-lg-5 offset-lg-1 mt-2 mt-lg-0">
+        <app-card [imageURL]="'images/about-section/about.webp'"></app-card>
+      </div>
     </div>
   </div>
 </section>
