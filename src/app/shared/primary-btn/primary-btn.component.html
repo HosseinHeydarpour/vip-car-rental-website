@@ -1,7 +1,9 @@
 <a
   [href]="buttonLink"
-  [ngClass]="{ 'd-flex align-items-center gap-2': hasArrow }"
-  >{{ buttonText }}
+  [ngClass]="{ 'd-flex align-items-center gap-2': hasArrow || ctaSocialIcon }"
+>
+  <ng-icon [name]="ctaSocialIcon" *ngIf="ctaSocialIcon"></ng-icon>
+  {{ buttonText }}
 
   <ng-icon name="bootstrapArrowUpRight" *ngIf="hasArrow"></ng-icon>
 </a>

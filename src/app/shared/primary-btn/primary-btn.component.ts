@@ -9,4 +9,5 @@ export class PrimaryBtnComponent {
   @Input() buttonLink;
   @Input() buttonText;
   @Input() hasArrow;
+  @Input() ctaSocialIcon = null;
 }
