@@ -1,9 +1,9 @@
-<nav class="navbar">
+<nav class="navbar" [ngClass]="{ 'is-sticky': isSticky }">
   <div class="container">
     <div class="navbar__logo">
       <img src="images/logo/logo-light.webp" alt="logo" />
     </div>
-    <ul class="navbar__nav d-flex align-items-center flex-row">
+    <ul class="navbar__nav d-flex align-items-center flex-row mb-0">
       <li class="navbar__item" *ngFor="let item of navbarMenus">
         <a
           class="navbar__link"
