@@ -8,6 +8,8 @@ import {
   bootstrapLuggageFill,
   bootstrapCarFrontFill,
   bootstrapArrowUpRight,
+  bootstrapCheck2,
+  bootstrapPlay,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
@@ -25,6 +27,8 @@ import { CardComponent } from './card/card.component';
       bootstrapLuggageFill,
       bootstrapCarFrontFill,
       bootstrapArrowUpRight,
+      bootstrapCheck2,
+      bootstrapPlay,
     }),
   ],
   declarations: [
@@ -38,6 +42,7 @@ import { CardComponent } from './card/card.component';
     NgIconsModule,
     PrimaryBtnComponent,
     SecondaryBtnComponent,
+    CardComponent,
   ],
 })
 export class SharedModule {}
