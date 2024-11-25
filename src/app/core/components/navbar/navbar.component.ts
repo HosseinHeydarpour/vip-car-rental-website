@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', [])
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+    this.isSticky = offset > 50; // Toggle sticky when user scrolls down 50px
+  }
+
   navbarMenus = [
     {
       title: 'Home',
