@@ -1,0 +1,68 @@
+<section class="section-services section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="section-services__heading mx-auto d-flex align-items-center flex-column mb-4"
+        >
+          <span class="subtitle mb-1 section-subtitle">What We Do</span>
+          <h3 class="section-heading">Our <span>Services</span></h3>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="section-services__slider mt-1">
+          <swiper-container init="false" #servicesSwiper>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/1.webp'"
+                [hasFade]="true"
+                [title]="'Corporate Car Rental'"
+                [counter]="'01'"
+              ></app-card>
+            </swiper-slide>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/2.webp'"
+                [hasFade]="true"
+                [title]="'Car Rental with Driver'"
+                [counter]="'02'"
+              ></app-card>
+            </swiper-slide>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/3.webp'"
+                [hasFade]="true"
+                [title]="'Airport Transfer'"
+                [counter]="'03'"
+              ></app-card>
+            </swiper-slide>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/4.webp'"
+                [hasFade]="true"
+                [title]="'Fleet Leasing'"
+                [counter]="'04'"
+              ></app-card>
+            </swiper-slide>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/5.webp'"
+                [hasFade]="true"
+                [title]="'VIP Transfer'"
+                [counter]="'05'"
+              ></app-card>
+            </swiper-slide>
+            <swiper-slide>
+              <app-card
+                [imageURL]="'images/services/6.webp'"
+                [hasFade]="true"
+                [title]="'Private Transfer'"
+                [counter]="'06'"
+              ></app-card>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
