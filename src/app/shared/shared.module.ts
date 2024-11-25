@@ -10,12 +10,14 @@ import {
   bootstrapArrowUpRight,
   bootstrapCheck2,
   bootstrapPlay,
+  bootstrapWhatsapp,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
 import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
 import { CardComponent } from './card/card.component';
 import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.component';
+import { CtaComponent } from './cta/cta.component';
 
 @NgModule({
   imports: [
@@ -30,6 +32,7 @@ import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.co
       bootstrapArrowUpRight,
       bootstrapCheck2,
       bootstrapPlay,
+      bootstrapWhatsapp,
     }),
   ],
   declarations: [
@@ -38,6 +41,7 @@ import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.co
     SecondaryBtnComponent,
     CardComponent,
     YellowSeperatorComponent,
+    CtaComponent,
   ],
   exports: [
     CommonModule,
@@ -46,6 +50,7 @@ import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.co
     SecondaryBtnComponent,
     CardComponent,
     YellowSeperatorComponent,
+    CtaComponent,
   ],
 })
 export class SharedModule {}
