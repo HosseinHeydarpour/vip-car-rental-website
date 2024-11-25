@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
 import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
 import { CardComponent } from './card/card.component';
+import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.component';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { CardComponent } from './card/card.component';
     SecondaryBtnComponent,
     SecondaryBtnComponent,
     CardComponent,
+    YellowSeperatorComponent,
   ],
   exports: [
     CommonModule,
@@ -43,6 +45,7 @@ import { CardComponent } from './card/card.component';
     PrimaryBtnComponent,
     SecondaryBtnComponent,
     CardComponent,
+    YellowSeperatorComponent,
   ],
 })
 export class SharedModule {}
