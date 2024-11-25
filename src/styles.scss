@@ -49,6 +49,10 @@ a:visited {
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.9;
+
+  &.section-subtitle {
+    font-size: 10px;
+  }
 }
 
 .section-heading {
