@@ -1,12 +1,38 @@
 <div class="car-card">
-  <img src="" alt="" class="w-100" />
-  <div class="car-card__box">
+  <div class="car-card__image-wrapper">
+    <img src="images/cars/1.webp" alt="" class="w-100" />
+  </div>
+  <div class="car-card__box d-flex align-items-center justify-content-between">
     <div class="car-card__info">
-      <p class="car-card__name"></p>
+      <p class="car-card__name">Bently Bentayga</p>
+      <ul>
+        <li>
+          <ng-icon name="gameCarDoor"></ng-icon>
+          <span>4 seats</span>
+        </li>
+        <li>
+          <ng-icon name="bootstrapCarFrontFill"></ng-icon>
+          <span>Auto</span>
+        </li>
+        <li>
+          <ng-icon name="bootstrapLuggageFill"></ng-icon>
+          <span>2 Bags</span>
+        </li>
+        <li>
+          <ng-icon name="bootstrapPersonFill"></ng-icon>
+          <span>Age 25</span>
+        </li>
+      </ul>
     </div>
-    <div class="car-card__cta">
-      <app-primary-btn></app-primary-btn>
-      <span class="car-card__price"></span>
+    <div class="car-card__cta d-flex align-items-center gap-3">
+      <app-primary-btn
+        [buttonText]="'Details'"
+        [buttonLink]="'#'"
+      ></app-primary-btn>
+      <div class="d-flex flex-column gap-0">
+        <span class="car-card__price">$600</span>
+        <span class="ms-auto">/day</span>
+      </div>
     </div>
   </div>
 </div>

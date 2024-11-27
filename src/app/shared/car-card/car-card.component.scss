@@ -1,0 +1,61 @@
+.car-card {
+  position: relative;
+
+  img {
+    transition: all 0.5s;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  &__image-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  &__box {
+    background-color: #222;
+    padding: 30px 30px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+  }
+
+  &__name {
+    font-weight: 700;
+    color: white;
+    font-size: 21px;
+  }
+
+  &__cta {
+    span {
+      line-height: 1.2;
+    }
+  }
+
+  &__price {
+    color: var(--color-yellow);
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  &__info {
+    ul {
+      display: flex;
+      gap: 14px;
+      padding: 0;
+      margin-bottom: 0;
+      ng-icon {
+        color: var(--color-yellow);
+      }
+      li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+  }
+}
