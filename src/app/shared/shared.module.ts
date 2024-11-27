@@ -18,6 +18,7 @@ import { SecondaryBtnComponent } from './secondary-btn/secondary-btn.component';
 import { CardComponent } from './card/card.component';
 import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.component';
 import { CtaComponent } from './cta/cta.component';
+import { CarCardComponent } from './car-card/car-card.component';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { CtaComponent } from './cta/cta.component';
     CardComponent,
     YellowSeperatorComponent,
     CtaComponent,
+    CarCardComponent,
   ],
   exports: [
     CommonModule,
@@ -51,6 +53,7 @@ import { CtaComponent } from './cta/cta.component';
     CardComponent,
     YellowSeperatorComponent,
     CtaComponent,
+    CarCardComponent,
   ],
 })
 export class SharedModule {}
