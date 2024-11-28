@@ -1,26 +1,26 @@
 <div class="car-card">
   <div class="car-card__image-wrapper">
-    <img src="images/cars/1.webp" alt="" class="w-100" />
+    <img [src]="imagePath" [alt]="imageAlt" class="w-100" />
   </div>
   <div class="car-card__box d-flex align-items-center justify-content-between">
     <div class="car-card__info">
-      <p class="car-card__name">Bently Bentayga</p>
+      <p class="car-card__name">{{ carName }}</p>
       <ul>
         <li>
           <ng-icon name="gameCarDoor"></ng-icon>
-          <span>4 seats</span>
+          <span>{{ carSeats }}</span>
         </li>
         <li>
           <ng-icon name="bootstrapCarFrontFill"></ng-icon>
-          <span>Auto</span>
+          <span>{{ carTransmittion }}</span>
         </li>
         <li>
           <ng-icon name="bootstrapLuggageFill"></ng-icon>
-          <span>2 Bags</span>
+          <span>{{ carStorage }}</span>
         </li>
         <li>
           <ng-icon name="bootstrapPersonFill"></ng-icon>
-          <span>Age 25</span>
+          <span>{{ carAge }}</span>
         </li>
       </ul>
     </div>
@@ -30,7 +30,7 @@
         [buttonLink]="'#'"
       ></app-primary-btn>
       <div class="d-flex flex-column gap-0">
-        <span class="car-card__price">$600</span>
+        <span class="car-card__price">${{ price }}</span>
         <span class="ms-auto">/day</span>
       </div>
     </div>
