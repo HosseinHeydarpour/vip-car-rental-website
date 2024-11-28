@@ -53,13 +53,186 @@ export class CarsComponent implements AfterViewInit {
 
       }
 
+       .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev {
+        opacity: 1;
+        visibility: visible;
+       }
+
+
+
       .swiper-pagination-bullet-active {
         border: 1px solid transparent;
         background: #f5b754;
       }
+
+      .swiper-button-next,.swiper-button-prev{
+        background-color: var(--color-yellow);
+            background-color: var(--color-yellow);
+    width: 55px;
+    height: 55px;
+    color: #222 !important;
+    border-radius: 50%;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+      }
+
+      .swiper-button-next svg, .swiper-button-prev svg{
+          width: 5px;
+      }
+
+    
       `,
     ],
   };
+
+  cars = [
+    {
+      carName: 'Rolls Royce Cullinan',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '4 Bags',
+      imagePath: 'images/cars/12.webp',
+      price: '$900',
+    },
+    {
+      carName: 'Bentley Continental',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/13.webp',
+      price: '$500',
+    },
+    {
+      carName: 'Audi RS7 Sportback',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/14.webp',
+      price: '$450',
+    },
+    {
+      carName: 'AUDI Q8',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '3 Bags',
+      imagePath: 'images/cars/15.webp',
+      price: '$450',
+    },
+    {
+      carName: 'Lamborghini Urus',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/1.webp',
+      price: '$750',
+    },
+    {
+      carName: 'Aston Martin DBX',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/8.webp',
+      price: '$500',
+    },
+    {
+      carName: 'Bugatti Mistral W16',
+      carAge: 'Age 25',
+      carSeats: 2,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/9.webp',
+      price: '$800',
+    },
+    {
+      carName: 'Bentley Bentayga',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/11.webp',
+      price: '$600',
+    },
+    {
+      carName: 'Rolls Royce Cullinan',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '4 Bags',
+      imagePath: 'images/cars/12.webp',
+      price: '$900',
+    },
+    {
+      carName: 'Bentley Continental',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/13.webp',
+      price: '$500',
+    },
+    {
+      carName: 'Audi RS7 Sportback',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/14.webp',
+      price: '$450',
+    },
+    {
+      carName: 'AUDI Q8',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '3 Bags',
+      imagePath: 'images/cars/15.webp',
+      price: '$450',
+    },
+    {
+      carName: 'Lamborghini Urus',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/7.webp',
+      price: '$750',
+    },
+    {
+      carName: 'Aston Martin DBX',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/8.webp',
+      price: '$500',
+    },
+    {
+      carName: 'Bugatti Mistral W16',
+      carAge: 'Age 25',
+      carSeats: 2,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/9.webp',
+      price: '$800',
+    },
+    {
+      carName: 'Bentley Bentayga',
+      carAge: 'Age 25',
+      carSeats: 4,
+      carTransmittion: 'Auto',
+      carStorage: '2 Bags',
+      imagePath: 'images/cars/11.webp',
+      price: '$600',
+    },
+  ];
 
   ngAfterViewInit(): void {
     if (this.swiperEl) {
