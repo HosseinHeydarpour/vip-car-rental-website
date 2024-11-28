@@ -19,10 +19,7 @@ export class CarsComponent implements AfterViewInit {
   swiperEl?: ElementRef;
 
   sliderConfig: SwiperOptions = {
-    navigation: {
-      nextEl: '.custom-next', // Custom "Next" button
-      prevEl: '.custom-prev', // Custom "Previous" button
-    },
+    navigation: true,
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
