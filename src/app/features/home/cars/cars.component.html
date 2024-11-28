@@ -14,10 +14,17 @@
       </div>
       <div class="col-lg-12">
         <swiper-container init="false" #swiperEl>
-          <swiper-slide><app-car-card></app-car-card></swiper-slide>
-          <swiper-slide><app-car-card></app-car-card></swiper-slide>
-          <swiper-slide><app-car-card></app-car-card></swiper-slide>
-          <swiper-slide><app-car-card></app-car-card></swiper-slide>
+          <swiper-slide *ngFor="let car of cars"
+            ><app-car-card
+              [carName]="car.carName"
+              [carAge]="car.carAge"
+              [carSeats]="car.carSeats"
+              [carTransmittion]="car.carTransmittion"
+              [carStorage]="car.carStorage"
+              [imagePath]="car.imagePath"
+              [price]="'600'"
+            ></app-car-card
+          ></swiper-slide>
         </swiper-container>
       </div>
     </div>
