@@ -2,9 +2,11 @@
   <div class="car-card__image-wrapper">
     <img [src]="imagePath" [alt]="imageAlt" class="w-100" />
   </div>
-  <div class="car-card__box d-flex align-items-center justify-content-between">
+  <div
+    class="car-card__box d-flex align-items-center flex-wrap justify-content-sm-between justify-content-center"
+  >
     <div class="car-card__info">
-      <p class="car-card__name">{{ carName }}</p>
+      <p class="car-card__name text-center text-sm-start">{{ carName }}</p>
       <ul>
         <li>
           <ng-icon name="gameCarDoor"></ng-icon>
@@ -24,10 +26,13 @@
         </li>
       </ul>
     </div>
-    <div class="car-card__cta d-flex align-items-center gap-3">
+    <div
+      class="car-card__cta d-flex align-items-center gap-3 mt-3 mt-sm-0 flex-grow-1 flex-sm-grow-0 justify-content-between"
+    >
       <app-primary-btn
         [buttonText]="'Details'"
         [buttonLink]="'#'"
+        [customClass]="'car-card__btn'"
       ></app-primary-btn>
       <div class="d-flex flex-column gap-0">
         <span class="car-card__price">${{ price }}</span>
