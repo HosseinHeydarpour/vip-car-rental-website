@@ -7,6 +7,7 @@ import { CoreModule } from '../core/core.module';
 import { AboutUsComponent } from './home/about-us/about-us.component';
 import { OurServicesComponent } from './home/our-services/our-services.component';
 import { CarsComponent } from './home/cars/cars.component';
+import { CategoriesComponent } from './home/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CarsComponent } from './home/cars/cars.component';
     AboutUsComponent,
     OurServicesComponent,
     CarsComponent,
+    CategoriesComponent,
   ],
   imports: [SharedModule, CoreModule],
   exports: [],
