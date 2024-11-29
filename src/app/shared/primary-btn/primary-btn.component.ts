@@ -10,4 +10,5 @@ export class PrimaryBtnComponent {
   @Input() buttonText;
   @Input() hasArrow;
   @Input() ctaSocialIcon = null;
+  @Input() customClass = '';
 }

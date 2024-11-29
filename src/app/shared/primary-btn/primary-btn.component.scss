@@ -22,3 +22,9 @@ a:active {
   background-color: white;
   border: 1px solid #fff;
 }
+
+a.car-card__btn {
+  @media only screen and (max-width: 36rem) {
+    padding: 7px 27px;
+  }
+}
