@@ -1,4 +1,4 @@
-<div class="card-cmp" [ngClass]="{ 'has-hover': hoverEffect }">
+<div class="card-cmp" [ngClass]="{ 'has-hover': hoverEffect, steps: desc }">
   <img [src]="imageURL" alt="" *ngIf="imageURL" />
   <div class="card-cmp__fade" *ngIf="hasFade"></div>
   <div
@@ -12,6 +12,11 @@
     <h4>
       {{ title }}
     </h4>
+  </div>
+  <div class="card-cmp__desc" *ngIf="desc">
+    <p>
+      {{ desc }}
+    </p>
   </div>
   <div class="card-cmp__curv-button">
     <a href="">
