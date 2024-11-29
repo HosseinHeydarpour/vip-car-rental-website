@@ -11,4 +11,6 @@ export class CardComponent {
   @Input() title: string = null;
   @Input() iconName: string = null;
   @Input() counter: string = null;
+  @Input() hoverEffect: boolean = false;
+  @Input() titlePosition: string;
 }

@@ -1,7 +1,14 @@
-<div class="card-cmp">
+<div class="card-cmp" [ngClass]="{ 'has-hover': hoverEffect }">
   <img [src]="imageURL" alt="" *ngIf="imageURL" />
   <div class="card-cmp__fade" *ngIf="hasFade"></div>
-  <div class="card-cmp__title" *ngIf="title">
+  <div
+    class="card-cmp__title"
+    *ngIf="title"
+    [ngClass]="{
+      top: titlePosition === 'top',
+      bottom: titlePosition === 'bottom'
+    }"
+  >
     <h4>
       {{ title }}
     </h4>
