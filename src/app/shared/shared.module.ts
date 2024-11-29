@@ -11,6 +11,7 @@ import {
   bootstrapCheck2,
   bootstrapPlay,
   bootstrapWhatsapp,
+  bootstrapInfoLg,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
@@ -34,6 +35,7 @@ import { CarCardComponent } from './car-card/car-card.component';
       bootstrapCheck2,
       bootstrapPlay,
       bootstrapWhatsapp,
+      bootstrapInfoLg,
     }),
   ],
   declarations: [
