@@ -13,7 +13,7 @@ import { SwiperOptions } from 'swiper/types';
   templateUrl: './cars.component.html',
   styleUrl: './cars.component.scss',
 })
-export class CarsComponent implements AfterViewInit, OnDestroy {
+export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
   @ViewChild('swiperEl', {
     static: false,
   })
@@ -236,6 +236,10 @@ export class CarsComponent implements AfterViewInit, OnDestroy {
   ];
 
   activeSlide: number;
+
+  ngOnInit(): void {
+    this.activeSlide = 0;
+  }
 
   ngAfterViewInit(): void {
     const swiperElement = this.swiperEl.nativeElement;
