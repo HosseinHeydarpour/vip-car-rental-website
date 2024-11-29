@@ -8,6 +8,7 @@ import { AboutUsComponent } from './home/about-us/about-us.component';
 import { OurServicesComponent } from './home/our-services/our-services.component';
 import { CarsComponent } from './home/cars/cars.component';
 import { CategoriesComponent } from './home/categories/categories.component';
+import { StepsComponent } from './home/steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CategoriesComponent } from './home/categories/categories.component';
     OurServicesComponent,
     CarsComponent,
     CategoriesComponent,
+    StepsComponent,
   ],
   imports: [SharedModule, CoreModule],
   exports: [],
