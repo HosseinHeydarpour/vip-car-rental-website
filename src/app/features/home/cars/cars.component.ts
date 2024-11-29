@@ -36,6 +36,8 @@ export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
             margin: 0 auto;
       }
 
+
+
       .swiper-pagination{
       position: absolute;
       bottom: 4vh !important;
@@ -83,6 +85,19 @@ export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
           width: 5px;
       }
 
+
+         @media only screen and (max-width:992px){
+         .swiper{
+        overflow: hidden;
+        min-height:480px;
+            
+      }
+
+        .swiper-button-next,.swiper-button-prev {
+       display:none !important;
+       
+       }
+      }
     
       `,
     ],
