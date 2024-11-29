@@ -2,6 +2,7 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  OnDestroy,
   OnInit,
   ViewChild,
 } from '@angular/core';
@@ -12,7 +13,7 @@ import { SwiperOptions } from 'swiper/types';
   templateUrl: './cars.component.html',
   styleUrl: './cars.component.scss',
 })
-export class CarsComponent implements AfterViewInit {
+export class CarsComponent implements AfterViewInit, OnDestroy {
   @ViewChild('swiperEl', {
     static: false,
   })
@@ -248,8 +249,22 @@ export class CarsComponent implements AfterViewInit {
       }
     }
 
-    swiperElement.addEventListener('swiperslidechange', (event) => {
-      this.activeSlide = event.detail[0].realIndex;
-    });
+    swiperElement.addEventListener('swiperslidechange', this.onSlideChange);
+  }
+
+  // The event handler function
+  onSlideChange = (event: Event) => {
+    const swiperEvent = event as CustomEvent; // Typecasting the event
+    this.activeSlide = swiperEvent.detail[0].realIndex;
+  };
+
+  ngOnDestroy(): void {
+    const swiperElement = this.swiperEl.nativeElement;
+    if (swiperElement) {
+      swiperElement.removeEventListener(
+        'swiperslidechange',
+        this.onSlideChange
+      );
+    }
   }
 }
