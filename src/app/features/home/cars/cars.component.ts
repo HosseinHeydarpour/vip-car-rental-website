@@ -234,9 +234,11 @@ export class CarsComponent implements AfterViewInit {
     },
   ];
 
+  activeSlide: number;
+
   ngAfterViewInit(): void {
+    const swiperElement = this.swiperEl.nativeElement;
     if (this.swiperEl) {
-      const swiperElement = this.swiperEl.nativeElement;
       Object.assign(swiperElement, this.sliderConfig);
       // Ensure swiperElement has the initialize method
       if (typeof swiperElement.initialize === 'function') {
@@ -245,5 +247,9 @@ export class CarsComponent implements AfterViewInit {
         console.error('Swiper element does not have an initialize method.');
       }
     }
+
+    swiperElement.addEventListener('swiperslidechange', (event) => {
+      this.activeSlide = event.detail[0].realIndex;
+    });
   }
 }

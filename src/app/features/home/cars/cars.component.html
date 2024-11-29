@@ -14,7 +14,7 @@
       </div>
       <div class="col-lg-12">
         <swiper-container init="false" #swiperEl>
-          <swiper-slide *ngFor="let car of cars"
+          <swiper-slide *ngFor="let car of cars; let i = index"
             ><app-car-card
               [carName]="car.carName"
               [carAge]="car.carAge"
@@ -23,6 +23,7 @@
               [carStorage]="car.carStorage"
               [imagePath]="car.imagePath"
               [price]="'600'"
+              [showBox]="i === activeSlide"
             ></app-car-card
           ></swiper-slide>
         </swiper-container>
