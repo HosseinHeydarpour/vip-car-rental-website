@@ -1,5 +1,14 @@
 .cta {
-  background-image: url("../../../../public/images/cta/1.webp");
+  &.one {
+    background-image: url("../../../../public/images/cta/1.webp");
+  }
+  &.two {
+    background-image: url("../../../../public/images/cta/2.webp");
+  }
+  &.three {
+    // background-image: url("../../../../public/images/cta/3.webp");
+  }
+
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
