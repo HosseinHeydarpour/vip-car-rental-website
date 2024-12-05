@@ -24,6 +24,7 @@ import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.co
 import { CtaComponent } from './cta/cta.component';
 import { CarCardComponent } from './car-card/car-card.component';
 import { TestimonialsCardComponent } from './testimonials-card/testimonials-card.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
 
 @NgModule({
   imports: [
@@ -53,6 +54,7 @@ import { TestimonialsCardComponent } from './testimonials-card/testimonials-card
     CtaComponent,
     CarCardComponent,
     TestimonialsCardComponent,
+    BlogCardComponent,
   ],
   exports: [
     CommonModule,
@@ -64,6 +66,7 @@ import { TestimonialsCardComponent } from './testimonials-card/testimonials-card
     CtaComponent,
     CarCardComponent,
     TestimonialsCardComponent,
+    BlogCardComponent,
   ],
 })
 export class SharedModule {}
