@@ -87,3 +87,9 @@ a:visited {
 .mb-30 {
   margin-bottom: 30px;
 }
+
+.disappear {
+  visibility: hidden;
+  opacity: 0;
+  display: none !important;
+}
