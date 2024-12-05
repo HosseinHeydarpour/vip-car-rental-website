@@ -29,6 +29,20 @@ export class TestimonialsComponent implements AfterViewInit {
       }
       `,
     ],
+
+    breakpoints: {
+      // when window width is >= 320px
+      0: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 480px
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
   };
 
   testimonials: TestimonialContent[] = [
