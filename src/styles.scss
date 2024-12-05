@@ -17,6 +17,10 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   font-size: 14px;
