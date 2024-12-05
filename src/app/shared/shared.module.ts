@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgIconsModule } from '@ng-icons/core';
 import { gameCarDoor } from '@ng-icons/game-icons';
@@ -25,6 +25,7 @@ import { CtaComponent } from './cta/cta.component';
 import { CarCardComponent } from './car-card/car-card.component';
 import { TestimonialsCardComponent } from './testimonials-card/testimonials-card.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import { BrandSliderComponent } from './brand-slider/brand-slider.component';
 
 @NgModule({
   imports: [
@@ -55,6 +56,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     CarCardComponent,
     TestimonialsCardComponent,
     BlogCardComponent,
+    BrandSliderComponent,
   ],
   exports: [
     CommonModule,
@@ -68,5 +70,6 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     TestimonialsCardComponent,
     BlogCardComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule {}
