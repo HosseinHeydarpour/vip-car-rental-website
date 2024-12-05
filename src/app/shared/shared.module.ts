@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgIconsModule } from '@ng-icons/core';
 import { gameCarDoor } from '@ng-icons/game-icons';
 import { featherPhoneCall, featherChevronDown } from '@ng-icons/feather-icons';
+
 import {
   bootstrapPersonFill,
   bootstrapLuggageFill,
@@ -22,6 +23,7 @@ import { CardComponent } from './card/card.component';
 import { YellowSeperatorComponent } from './yellow-seperator/yellow-seperator.component';
 import { CtaComponent } from './cta/cta.component';
 import { CarCardComponent } from './car-card/car-card.component';
+import { TestimonialsCardComponent } from './testimonials-card/testimonials-card.component';
 
 @NgModule({
   imports: [
@@ -50,6 +52,7 @@ import { CarCardComponent } from './car-card/car-card.component';
     YellowSeperatorComponent,
     CtaComponent,
     CarCardComponent,
+    TestimonialsCardComponent,
   ],
   exports: [
     CommonModule,
@@ -60,6 +63,7 @@ import { CarCardComponent } from './car-card/car-card.component';
     YellowSeperatorComponent,
     CtaComponent,
     CarCardComponent,
+    TestimonialsCardComponent,
   ],
 })
 export class SharedModule {}
