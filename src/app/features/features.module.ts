@@ -10,6 +10,7 @@ import { CarsComponent } from './home/cars/cars.component';
 import { CategoriesComponent } from './home/categories/categories.component';
 import { StepsComponent } from './home/steps/steps.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { BlogsComponent } from './home/blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
     CategoriesComponent,
     StepsComponent,
     TestimonialsComponent,
+    BlogsComponent,
   ],
   imports: [SharedModule, CoreModule],
   exports: [],
