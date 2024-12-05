@@ -13,57 +13,36 @@ export class BrandSliderComponent implements AfterViewInit {
   logoSlider;
   config: SwiperOptions = {
     navigation: false,
-    slidesPerView: 1,
-    spaceBetween: 30,
+    slidesPerView: 6,
+    spaceBetween: 15,
     loop: true,
     slidesPerGroup: 1,
-    pagination: {
-      clickable: true,
+    pagination: false,
+    autoplay: {
+      delay: 2500,
     },
+
     injectStyles: [
       `
-      .swiper{
-        padding-bottom: 40px;
+      img {
+        width: 100%;
       }
-
-
-      .swiper-pagination{
-      position: absolute;
-      bottom: 0vh !important;
-      }
-
-          .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        text-align: center;
-        
-       
-        color: #000;
-        opacity: 1;
-        background: transparent;
-        border: 1px solid white;
-
-      }
-
-      .swiper-pagination-bullet-active {
-        border: 1px solid transparent;
-        background: #f5b754;
-      }
+      
       `,
     ],
 
     breakpoints: {
-      // when window width is >= 320px
-      576: {
+      0: {
         slidesPerView: 2,
-        spaceBetween: 20,
-        slidesPerGroup: 2,
       },
-      // when window width is >= 480px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
+      576: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
       },
     },
   };

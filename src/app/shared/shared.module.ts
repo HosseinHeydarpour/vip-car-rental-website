@@ -15,6 +15,9 @@ import {
   bootstrapInfoLg,
   bootstrapStarFill,
   bootstrapQuote,
+  bootstrapTelephoneOutbound,
+  bootstrapEnvelopeAt,
+  bootstrapMap,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
@@ -44,6 +47,9 @@ import { BrandSliderComponent } from './brand-slider/brand-slider.component';
       bootstrapInfoLg,
       bootstrapStarFill,
       bootstrapQuote,
+      bootstrapTelephoneOutbound,
+      bootstrapEnvelopeAt,
+      bootstrapMap,
     }),
   ],
   declarations: [
