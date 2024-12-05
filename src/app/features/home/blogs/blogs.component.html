@@ -12,15 +12,17 @@
           </h3>
         </div>
       </div>
-      <div class="col-lg-4">
-        <app-blog-card></app-blog-card>
-      </div>
-
-      <div class="col-lg-4">
-        <app-blog-card></app-blog-card>
-      </div>
-      <div class="col-lg-4">
-        <app-blog-card></app-blog-card>
+      <div class="col-lg-12">
+        <swiper-container init="false" #swiperEl>
+          <swiper-slide *ngFor="let blog of blogs">
+            <app-blog-card
+              [title]="blog.title"
+              [date]="blog.date"
+              [category]="blog.category"
+              [blogImage]="blog.blogImage"
+            ></app-blog-card>
+          </swiper-slide>
+        </swiper-container>
       </div>
     </div>
   </div>
