@@ -11,8 +11,14 @@
       </div>
       <div class="col-lg-12">
         <swiper-container init="false" #swiperEl>
-          <swiper-slide>
-            <app-testimonials-card></app-testimonials-card
+          <swiper-slide *ngFor="let testimonial of testimonials">
+            <app-testimonials-card
+              [name]="testimonial.name"
+              [role]="testimonial.role"
+              [comment]="testimonial.comment"
+              [rating]="testimonial.rating"
+              [profile]="testimonial.profileImg"
+            ></app-testimonials-card
           ></swiper-slide>
         </swiper-container>
       </div>
