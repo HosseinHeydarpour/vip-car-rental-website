@@ -69,6 +69,7 @@ import { BrandSliderComponent } from './brand-slider/brand-slider.component';
     CarCardComponent,
     TestimonialsCardComponent,
     BlogCardComponent,
+    BrandSliderComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
