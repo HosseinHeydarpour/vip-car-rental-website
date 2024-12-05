@@ -1,8 +1,13 @@
 <div class="testimonial">
   <div class="testimonial__rating">
     <ng-icon
-      *ngFor="let icon of [1, 2, 3, 4, 5]"
+      *ngFor="let icon of [].constructor(rating)"
       name="bootstrapStarFill"
+    ></ng-icon>
+    <ng-icon
+      *ngFor="let icon of [].constructor(5 - rating)"
+      name="bootstrapStarFill"
+      class="gray-star"
     ></ng-icon>
     <div class="testimonial__shape testimonial__shape--rating-lt">
       <svg
