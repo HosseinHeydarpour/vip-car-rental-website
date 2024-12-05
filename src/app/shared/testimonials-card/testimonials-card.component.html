@@ -1,0 +1,77 @@
+<div class="testimonial">
+  <div class="testimonial__rating">
+    <ng-icon
+      *ngFor="let icon of [1, 2, 3, 4, 5]"
+      name="bootstrapStarFill"
+    ></ng-icon>
+    <div class="testimonial__shape testimonial__shape--rating-lt">
+      <svg
+        viewBox="0 0 11 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-11 h-11"
+      >
+        <path
+          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+          fill="#1b1b1b"
+        ></path>
+      </svg>
+    </div>
+    <div class="testimonial__shape testimonial__shape--rating-rb">
+      <svg
+        viewBox="0 0 11 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-11 h-11"
+      >
+        <path
+          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+          fill="#1b1b1b"
+        ></path>
+      </svg>
+    </div>
+  </div>
+  <div class="testimonial__content">
+    <i class="testimonial__icon">
+      <ng-icon name="bootstrapQuote"></ng-icon>
+    </i>
+    <p>
+      {{ content }}
+    </p>
+  </div>
+  <div class="testimonial__author">
+    <div class="testimonial__img-wrapper">
+      <img src="images/testimonials/1.webp" alt="" class="testimonial__image" />
+    </div>
+    <div class="testimonial__meta">
+      <p>Olivia Brown</p>
+      <p>Customer</p>
+    </div>
+    <div class="testimonial__shape--left-top testimonial__shape">
+      <svg
+        viewBox="0 0 11 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-11 h-11"
+      >
+        <path
+          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+          fill="#1b1b1b"
+        ></path>
+      </svg>
+    </div>
+    <div class="testimonial__shape--right-bottom testimonial__shape">
+      <svg
+        viewBox="0 0 11 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-11 h-11"
+      >
+        <path
+          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+          fill="#1b1b1b"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</div>
