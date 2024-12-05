@@ -1,0 +1,133 @@
+.blog-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 0;
+
+  isolation: isolate;
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  &__info {
+    position: absolute;
+    bottom: 0px;
+    padding: 0 20px 25px 110px;
+    width: 100%;
+    text-align: right;
+
+    h3 {
+      color: white;
+      text-align: right;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    background-color: var(--bg-color);
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 45px;
+
+    a,
+    a:link,
+    a:visited {
+      color: white;
+      text-decoration: none;
+      background-color: transparent;
+      border: 1px solid var(--color-yellow);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      ng-icon {
+        color: #222;
+      }
+    }
+
+    a.active {
+      background-color: var(--color-yellow);
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    &--day {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &--month {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--left-top {
+      top: -25px;
+      left: -2px;
+      transform: rotate(270deg);
+    }
+
+    &--right-bottom {
+      bottom: -2px;
+      right: -22px;
+      transform: rotate(270deg);
+    }
+  }
+
+  &__arrow {
+    line-height: 0;
+    font-size: 16px;
+  }
+}
+
+.bottom-fade {
+  width: 100%;
+  top: 40%;
+  height: 60%;
+  float: left;
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    #000000 0%,
+    rgba(0, 0, 0, 0.738) 19%,
+    rgba(0, 0, 0, 0.541) 34%,
+    rgba(0, 0, 0, 0.382) 47%,
+    rgba(0, 0, 0, 0.278) 56.5%,
+    rgba(0, 0, 0, 0.194) 65%,
+    rgba(0, 0, 0, 0.126) 73%,
+    rgba(0, 0, 0, 0.075) 80.2%,
+    rgba(0, 0, 0, 0.042) 86.1%,
+    rgba(0, 0, 0, 0.021) 91%,
+    rgba(0, 0, 0, 0.008) 95.2%,
+    rgba(0, 0, 0, 0.002) 98.2%,
+    transparent 100%
+  );
+}
