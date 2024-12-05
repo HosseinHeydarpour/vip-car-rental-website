@@ -15,6 +15,7 @@ export class TestimonialsComponent implements AfterViewInit {
     navigation: false,
     slidesPerView: 3,
     pagination: false,
+    spaceBetween: 25,
   };
 
   ngAfterViewInit(): void {
