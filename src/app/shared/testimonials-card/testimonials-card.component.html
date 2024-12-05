@@ -41,16 +41,16 @@
       <ng-icon name="bootstrapQuote"></ng-icon>
     </i>
     <p>
-      {{ content }}
+      {{ comment }}
     </p>
   </div>
   <div class="testimonial__author">
     <div class="testimonial__img-wrapper">
-      <img src="images/testimonials/1.webp" alt="" class="testimonial__image" />
+      <img [src]="profile" alt="" class="testimonial__image" />
     </div>
     <div class="testimonial__meta">
-      <p>Olivia Brown</p>
-      <p>Customer</p>
+      <p>{{ name }}</p>
+      <p>{{ role }}</p>
     </div>
     <div class="testimonial__shape--left-top testimonial__shape">
       <svg
