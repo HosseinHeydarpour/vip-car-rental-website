@@ -31,6 +31,7 @@ import { CarCardComponent } from './car-card/car-card.component';
 import { TestimonialsCardComponent } from './testimonials-card/testimonials-card.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { BrandSliderComponent } from './brand-slider/brand-slider.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 @NgModule({
   imports: [
@@ -67,6 +68,7 @@ import { BrandSliderComponent } from './brand-slider/brand-slider.component';
     TestimonialsCardComponent,
     BlogCardComponent,
     BrandSliderComponent,
+    SubscribeComponent,
   ],
   exports: [
     CommonModule,
@@ -80,6 +82,7 @@ import { BrandSliderComponent } from './brand-slider/brand-slider.component';
     TestimonialsCardComponent,
     BlogCardComponent,
     BrandSliderComponent,
+    SubscribeComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

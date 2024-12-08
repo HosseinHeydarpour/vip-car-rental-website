@@ -1,0 +1,56 @@
+input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  height: 100%;
+
+  padding: 20px 20px;
+  &:focus,
+  &:focus-visible {
+    border-color: transparent !important;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  border: 1px solid var(--color-yellow);
+  border-radius: 50px;
+  width: 100%;
+
+  &:hover button {
+    background-color: white;
+    color: #000;
+
+    ng-icon {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 2px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.7s;
+
+  ng-icon {
+    transition: all 0.7s;
+  }
+}
