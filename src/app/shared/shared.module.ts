@@ -18,6 +18,8 @@ import {
   bootstrapTelephoneOutbound,
   bootstrapEnvelopeAt,
   bootstrapMap,
+  bootstrapFacebook,
+  bootstrapYoutube,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
@@ -50,6 +52,8 @@ import { BrandSliderComponent } from './brand-slider/brand-slider.component';
       bootstrapTelephoneOutbound,
       bootstrapEnvelopeAt,
       bootstrapMap,
+      bootstrapFacebook,
+      bootstrapYoutube,
     }),
   ],
   declarations: [
