@@ -1,6 +1,10 @@
 .footer {
   padding: 90px 0;
 
+  @media only screen and (max-width: 36rem) {
+    padding: 50px 0;
+  }
+
   &__contacts {
     padding: 20px;
     border: 1px solid #222;
@@ -9,6 +13,11 @@
     ul {
       margin-bottom: 0;
       max-width: 1032px;
+
+      @media only screen and (max-width: 62rem) {
+        flex-direction: column;
+        gap: 15px;
+      }
     }
 
     li {
@@ -38,12 +47,22 @@
       font-weight: 700;
       color: white;
     }
+
+    span:last-child {
+      color: white;
+      opacity: 0.8;
+    }
   }
 
   &__vertical-divider {
     width: 1px;
     height: 100%;
     background: #222;
+    @media only screen and (max-width: 62rem) {
+      width: auto;
+      height: 1px;
+      margin: 5px 0;
+    }
   }
 
   &__logo {
@@ -151,5 +170,19 @@
     color: #fff;
     margin-bottom: 15px;
     font-weight: 700;
+  }
+
+  &__copyright {
+    a,
+    a:link,
+    a:visited {
+      background: linear-gradient(to bottom, #f5b754 0%, #f5b754 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 1px 1px;
+      color: #fff;
+      text-decoration: none;
+      transition: background-size 0.2s;
+    }
   }
 }

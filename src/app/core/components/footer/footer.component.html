@@ -36,7 +36,7 @@
 
     <div class="footer__content">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-5">
           <div class="footer__logo">
             <img src="images/logo/logo-light.webp" alt="VIP car rental logo" />
           </div>
@@ -64,7 +64,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3 offset-md-1">
+        <div class="col-md-3 offset-md-1 mb-5">
           <div class="footer__col">
             <h4 class="footer__title">Quick Links</h4>
             <ul>
@@ -79,14 +79,27 @@
         <div class="col-md-4">
           <div class="footer__col">
             <h4 class="footer__title">Subscribe</h4>
-            <p>
-              Want to be notified about our services. Just sign up and we'll
-              send you a notification by email.
-            </p>
+            <div class="footer__description">
+              <p>
+                Want to be notified about our services. Just sign up and we'll
+                send you a notification by email.
+              </p>
+            </div>
             <app-subscribe></app-subscribe>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="footer__copyright text-center">
+      <p class="text-center">
+        ©
+        <span class="date me-2" #date></span>
+        <a href="https://ir.linkedin.com/in/hosseinheydarpour"
+          >Hossein Heydarpour</a
+        >. Built with ❤ using Angular. All rights reserved, but feel free to
+        modify and share!
+      </p>
     </div>
   </div>
 </footer>
