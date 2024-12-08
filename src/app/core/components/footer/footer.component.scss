@@ -1,8 +1,10 @@
 .footer {
   padding: 90px 0;
+  padding-bottom: 5px;
 
   @media only screen and (max-width: 36rem) {
     padding: 50px 0;
+    padding-bottom: 5px;
   }
 
   &__contacts {
@@ -173,6 +175,9 @@
   }
 
   &__copyright {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+
     a,
     a:link,
     a:visited {
