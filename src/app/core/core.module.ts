@@ -7,6 +7,6 @@ import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.
 @NgModule({
   declarations: [NavbarComponent, FooterComponent, MobileNavbarComponent],
   imports: [SharedModule],
-  exports: [NavbarComponent, FooterComponent],
+  exports: [NavbarComponent, FooterComponent, MobileNavbarComponent],
 })
 export class CoreModule {}

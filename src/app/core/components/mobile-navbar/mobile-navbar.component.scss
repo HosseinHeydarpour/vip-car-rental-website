@@ -1,0 +1,29 @@
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 500;
+  background-color: var(--bg-color);
+  @media only screen and (min-width: 62rem) {
+    display: none;
+  }
+
+  &__nav {
+  }
+
+  &__item {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+  }
+
+  &__link {
+    &:link,
+    &:active {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+}
