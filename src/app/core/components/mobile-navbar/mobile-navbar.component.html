@@ -1,18 +1,35 @@
+<div class="backdrop" (click)="onBackdropClick()"></div>
 <nav class="mobile-navbar">
-  <ul class="mobile-navbar__nav">
+  <div class="mobile-navbar__logo">
+    <img src="images/logo/logo-light.webp" alt="VIP" />
+  </div>
+  <form action="" class="mobile-navbar__form">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search..." />
+      <button type="submit"><ng-icon name="bootstrapSearch"></ng-icon></button>
+    </div>
+  </form>
+
+  <p class="mobile-navbar__title">Menu</p>
+  <ul class="mobile-navbar__nav w-100 d-flex flex-column">
     <li class="mobile-navbar__item">
+      <ng-icon name="bootstrapHouse"></ng-icon>
       <a href="" class="mobile-navbar__link">Home</a>
     </li>
     <li class="mobile-navbar__item">
+      <ng-icon name="bootstrapCheckCircle"></ng-icon>
       <a href="" class="mobile-navbar__link">Services</a>
     </li>
     <li class="mobile-navbar__item">
+      <ng-icon name="bootstrapBook"></ng-icon>
       <a href="" class="mobile-navbar__link">Blogs</a>
     </li>
     <li class="mobile-navbar__item">
+      <ng-icon name="bootstrapInfoCircle"></ng-icon>
       <a href="" class="mobile-navbar__link">About Us</a>
     </li>
     <li class="mobile-navbar__item">
+      <ng-icon name="bootstrapChat"></ng-icon>
       <a href="" class="mobile-navbar__link">Contact Us</a>
     </li>
   </ul>
