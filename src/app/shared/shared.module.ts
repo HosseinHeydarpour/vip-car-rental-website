@@ -20,6 +20,12 @@ import {
   bootstrapMap,
   bootstrapFacebook,
   bootstrapYoutube,
+  bootstrapSearch,
+  bootstrapCheckCircle,
+  bootstrapHouse,
+  bootstrapBook,
+  bootstrapInfoCircle,
+  bootstrapChat,
 } from '@ng-icons/bootstrap-icons';
 import { CommonModule } from '@angular/common';
 import { PrimaryBtnComponent } from './primary-btn/primary-btn.component';
@@ -55,6 +61,12 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
       bootstrapMap,
       bootstrapFacebook,
       bootstrapYoutube,
+      bootstrapSearch,
+      bootstrapCheckCircle,
+      bootstrapHouse,
+      bootstrapBook,
+      bootstrapInfoCircle,
+      bootstrapChat,
     }),
   ],
   declarations: [
