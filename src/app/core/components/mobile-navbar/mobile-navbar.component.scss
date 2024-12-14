@@ -1,10 +1,15 @@
 .mobile-navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 70dvw;
   height: 100dvh;
   z-index: 500;
+  transition: all 0.5s ease-in-out;
+
+  &.show-mobile-nav {
+    left: 0;
+  }
 
   padding: 25px 25px 0;
 
@@ -102,6 +107,37 @@
       ng-icon {
         opacity: 1;
       }
+    }
+  }
+
+  &__trigger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    top: 33px;
+    z-index: 5000;
+    right: 30px;
+    cursor: pointer;
+
+    &.navOpen {
+      span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg); /* Top line rotates to form part of the "X" */
+      }
+
+      span:nth-child(2) {
+        opacity: 0; /* Middle line disappears */
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg); /* Bottom line rotates to form part of the "X" */
+      }
+    }
+    span {
+      width: 35px;
+      height: 2px;
+      background-color: white;
+      transition: all 0.3s ease; /* Smooth transition for animations */
     }
   }
 }

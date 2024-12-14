@@ -1,5 +1,18 @@
-<div class="backdrop" (click)="onBackdropClick()"></div>
-<nav class="mobile-navbar">
+@if (!isNavbarHidden) {
+<div class="backdrop" (click)="onToggleMobileNav()"></div>
+}
+
+<div
+  class="mobile-navbar__trigger"
+  (click)="onToggleMobileNav()"
+  [class.navOpen]="!isNavbarHidden"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="mobile-navbar" [ngClass]="{ 'show-mobile-nav': !isNavbarHidden }">
   <div class="mobile-navbar__logo">
     <img src="images/logo/logo-light.webp" alt="VIP" />
   </div>

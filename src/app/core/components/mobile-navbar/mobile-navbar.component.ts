@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './mobile-navbar.component.scss',
 })
 export class MobileNavbarComponent {
-  onBackdropClick() {}
+  isNavbarHidden: boolean = true;
+  onToggleMobileNav() {
+    this.isNavbarHidden = !this.isNavbarHidden;
+  }
 }
