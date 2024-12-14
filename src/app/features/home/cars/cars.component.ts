@@ -89,7 +89,7 @@ export class CarsComponent implements AfterViewInit, OnDestroy, OnInit {
          @media only screen and (max-width:992px){
          .swiper{
         overflow: hidden;
-        min-height:480px;
+        min-height:375px;
             
       }
 
