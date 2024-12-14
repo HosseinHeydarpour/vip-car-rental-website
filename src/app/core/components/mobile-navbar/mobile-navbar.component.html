@@ -3,13 +3,25 @@
 }
 
 <div
-  class="mobile-navbar__trigger"
-  (click)="onToggleMobileNav()"
-  [class.navOpen]="!isNavbarHidden"
+  class="d-flex justify-content-between mobile-navbar__heading align-items-center container"
 >
-  <span></span>
-  <span></span>
-  <span></span>
+  <div class="logo">
+    <img
+      src="images/logo/logo-light.webp"
+      alt="VIP"
+      class="w-100"
+      [class.vanish]="!isNavbarHidden"
+    />
+  </div>
+  <div
+    class="mobile-navbar__trigger d-lg-none"
+    (click)="onToggleMobileNav()"
+    [class.navOpen]="!isNavbarHidden"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
 
 <nav class="mobile-navbar" [ngClass]="{ 'show-mobile-nav': !isNavbarHidden }">
