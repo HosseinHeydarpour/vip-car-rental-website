@@ -7,6 +7,13 @@
     height: 100dvh;
     position: relative;
     width: 100dvw;
+
+    @media only screen and (max-width: 36rem) {
+      height: 85dvh;
+      position: relative;
+      width: 100dvw;
+    }
+
     img {
       height: 100%;
       width: 100dvw !important;
@@ -40,11 +47,20 @@
   &__heading {
     color: white;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4rem;
+
+    @media only screen and (max-width: 36rem) {
+      font-size: 2rem !important;
+    }
   }
 
   &__desc {
     width: 55%;
+
+    @media only screen and (max-width: 36rem) {
+      width: 80%;
+    }
+
     span:first-child {
       font-size: 17px;
       font-weight: 300;
@@ -56,9 +72,14 @@
     font-size: 12px;
     font-weight: 300;
     span {
+      // font-size: 21px;
+      // font-weight: 700;
+
+      display: inline-block;
+      font-weight: 700 !important;
+      font-size: 21px !important;
       color: var(--color-yellow) !important;
-      font-size: 21px;
-      font-weight: 700;
+      margin-left: 20px;
     }
   }
 }
